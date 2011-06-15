@@ -8,9 +8,9 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-using BattleCityDotNET_Model.Levels;
-using BattleCityDotNET_Model.Utils;
-using BattleCityDotNET_Model.Item;
+using BattleCityDotNETModel.Levels;
+using BattleCityDotNETModel.Utils;
+using BattleCityDotNETModel.Item;
 
 namespace BattleCityDotNET.Levels
 {

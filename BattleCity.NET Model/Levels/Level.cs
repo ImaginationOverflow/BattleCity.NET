@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Runtime.Serialization;
-using BattleCityDotNET_Model.Utils;
-using BattleCityDotNET_Model.Item;
+using BattleCityDotNETModel.Item;
+using BattleCityDotNETModel.Utils;
 
-namespace BattleCityDotNET_Model.Levels
+namespace BattleCityDotNETModel.Levels
 {
     [Serializable]
     public class Level

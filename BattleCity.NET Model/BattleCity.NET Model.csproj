@@ -8,7 +8,7 @@
     <ProjectGuid>{67106F1D-830D-4B88-86FC-953F803410E2}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BattleCityDotNET_Model</RootNamespace>
+    <RootNamespace>BattleCityDotNETModel</RootNamespace>
     <AssemblyName>BattleCity.NET Model</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,8 +44,10 @@
     <Compile Include="Levels\EnemyData.cs" />
     <Compile Include="Levels\Level.cs" />
     <Compile Include="Levels\LevelData.cs" />
-    <Compile Include="Tank.cs" />
+    <Compile Include="Tanks\ITank.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tanks\SimpleTank.cs" />
+    <Compile Include="Tanks\TankTemplate.cs" />
     <Compile Include="Utils\Coordinates2D.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

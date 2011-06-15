@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using BattleCityDotNETModel;
+using BattleCityDotNETModel.Tanks;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
@@ -8,9 +10,8 @@ using Microsoft.Xna.Framework.GamerServices;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using Microsoft.Xna.Framework.Media;
-using BattleCityDotNET_Model.Levels;
-using BattleCityDotNET_Model.Item;
-using BattleCityDotNET_Model;
+using BattleCityDotNETModel.Levels;
+using BattleCityDotNETModel.Item;
 
 
 namespace BattleCityDotNET.Levels
@@ -45,7 +46,7 @@ namespace BattleCityDotNET.Levels
                 new ItemData[10] { ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL, ItemData.WALL}
             };
 
-            Tank enemy = new Tank(1, "Enemy 1");
+            ITank enemy = new SimpleTank(1, "Enemy 1");
             
             EnemyData enemyData = new EnemyData();
             enemyData.AddEnemy(enemy);

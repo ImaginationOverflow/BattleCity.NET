@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace BattleCityDotNET_Model.Item
+namespace BattleCityDotNETModel.Item
 {
     public enum ItemData
     {

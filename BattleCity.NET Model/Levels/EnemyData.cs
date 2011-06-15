@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using BattleCityDotNETModel;
+using BattleCityDotNETModel.Tanks;
 
-namespace BattleCityDotNET_Model.Levels
+namespace BattleCityDotNETModel.Levels
 {
     public class EnemyData
     {
-        private readonly LinkedList<Tank> _enemies = new LinkedList<Tank>();
+        private readonly LinkedList<ITank> _enemies = new LinkedList<ITank>();
 
-        public bool AddEnemy(Tank enemy)
+        public bool AddEnemy(ITank enemy)
         {
             if(_enemies.Contains(enemy))
                 return false;
@@ -17,7 +19,7 @@ namespace BattleCityDotNET_Model.Levels
             return true;
         }
 
-        public bool RemoveEnemy(Tank enemy)
+        public bool RemoveEnemy(ITank enemy)
         {
             if (!_enemies.Contains(enemy))
                 return false;
@@ -25,7 +27,7 @@ namespace BattleCityDotNET_Model.Levels
             return true;
         }
 
-        public IEnumerable<Tank> GetAllEnemies()
+        public IEnumerable<ITank> GetAllEnemies()
         {
             return _enemies;
         }

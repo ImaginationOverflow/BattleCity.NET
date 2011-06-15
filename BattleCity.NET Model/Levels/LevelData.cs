@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using BattleCityDotNET_Model.Item;
-using BattleCityDotNET_Model.Utils;
+using BattleCityDotNETModel.Item;
+using BattleCityDotNETModel.Utils;
 
-namespace BattleCityDotNET_Model.Levels
+namespace BattleCityDotNETModel.Levels
 {
     public class LevelData
     {
